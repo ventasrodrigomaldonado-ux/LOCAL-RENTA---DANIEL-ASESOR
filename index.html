@@ -3,73 +3,50 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LOCAL EN RENTA | AV. ALLENDE</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<title>Local en Renta | Av. Allende</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-
-.music-btn{
-position:absolute;
-top:25px;
-right:30px;
-background:transparent;
-color:#d4af37;
-border:1px solid #d4af37;
-padding:8px 18px;
-border-radius:25px;
-font-size:13px;
-letter-spacing:1px;
-cursor:pointer;
-transition:0.3s;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-.music-btn:hover{
-background:#d4af37;
-color:#000;
+body{
+margin:0;
+font-family:'Montserrat',sans-serif;
+background:#0a0a0a;
+color:#eaeaea;
+overflow-x:hidden;
 }
 
-body{margin:0;font-family:'Montserrat',sans-serif;background:#0a0a0a;color:#eaeaea;overflow-x:hidden;}
-
-body::before{content:"";position:fixed;width:100%;height:100%;background:
-radial-gradient(circle at 20% 30%, rgba(255,255,255,0.03), transparent 40%),
-radial-gradient(circle at 80% 70%, rgba(255,255,255,0.02), transparent 40%),
-linear-gradient(135deg, rgba(255,255,255,0.015) 25%, transparent 25%),
-linear-gradient(225deg, rgba(255,255,255,0.015) 25%, transparent 25%);
-background-size:300px 300px;z-index:-1;}
-
-header{text-align:center;padding:320px 20px;border-bottom:1px solid #c9a24a;}
-.logo{width: 360px;px;}
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+radial-gradient(circle at 20% 30%, rgba(255,255,255,.03), transparent 40%),
+radial-gradient(circle at 80% 70%, rgba(255,255,255,.02), transparent 40%),
+linear-gradient(135deg, rgba(255,255,255,.015) 25%, transparent 25%),
+linear-gradient(225deg, rgba(255,255,255,.015) 25%, transparent 25%);
+background-size:300px 300px;
+z-index:-1;
+}
 
 header{
+text-align:center;
+padding:100px 20px 80px;
+border-bottom:1px solid #c9a24a;
 position:relative;
 }
 
-h1{font-family:'Playfair Display';font-size:42px;color:#d4af37;}
-.sub{color:#aaa;letter-spacing:2px;}
-
-.hero-text{max-width:700px;margin:auto;color:#ccc;line-height:1.7;}
-.price{font-size:32px;color:#d4af37;margin:20px 0;}
-
-.btn{background:#d4af37;color:#000;padding:15px 35px;border-radius:30px;text-decoration:none;font-weight:600;display:inline-block;margin-top:20px;}
-
-.section{padding:70px 20px;max-width:1100px;margin:auto;}
-.section h2{font-family:'Playfair Display';color:#d4af37;}
-.divider{width:80px;height:2px;background:#d4af37;margin:15px 0 30px 0;}
-
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px;}
-.gallery img{width:100%;border-radius:12px;}
-
-.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;}
-.card{background:#111;padding:25px;border-radius:12px;border:1px solid rgba(212,175,55,0.2);}
-
-.invest{background:#111;padding:40px;border-radius:12px;text-align:center;border:1px solid rgba(212,175,55,0.2);} 
-
-.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:15px 20px;border-radius:50px;text-decoration:none;font-weight:600;}
-footer{text-align:center;padding:40px;border-top:1px solid #c9a24a;color:#aaa;}
-
-header{
-position:relative !important;
+.logo{
+width:260px;
+max-width:85%;
+margin-bottom:25px;
 }
 
 .music-btn{
@@ -84,137 +61,372 @@ border-radius:25px;
 font-size:13px;
 cursor:pointer;
 z-index:9999;
-display:block;
 }
 
-header{
-position:relative;
+h1{
+font-family:'Playfair Display',serif;
+font-size:44px;
+color:#d4af37;
+margin-top:15px;
 }
 
+.sub{
+color:#aaa;
+letter-spacing:2px;
+text-transform:uppercase;
+}
+
+.hero-text{
+max-width:760px;
+margin:25px auto;
+color:#ccc;
+line-height:1.8;
+}
+
+.price{
+font-size:32px;
+color:#d4af37;
+margin:20px 0;
+font-weight:700;
+}
+
+.btn{
+background:#d4af37;
+color:#000;
+padding:15px 35px;
+border-radius:35px;
+text-decoration:none;
+font-weight:700;
+display:inline-block;
+margin-top:20px;
+text-align:center;
+transition:.3s;
+}
+
+.btn:hover{
+background:#fff;
+transform:translateY(-3px);
+}
+
+.section{
+padding:70px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.section h2{
+font-family:'Playfair Display',serif;
+color:#d4af37;
+font-size:34px;
+}
+
+.divider{
+width:80px;
+height:2px;
+background:#d4af37;
+margin:15px 0 30px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:360px;
+object-fit:cover;
+border-radius:16px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 18px 45px rgba(0,0,0,.35);
+}
+
+.fachada-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:24px;
+}
+
+.fachada-grid img{
+width:100%;
+height:520px;
+object-fit:cover;
+border-radius:16px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 18px 45px rgba(0,0,0,.35);
+}
+
+.gallery img:hover,
+.fachada-grid img:hover{
+transform:scale(1.02);
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:20px;
+}
+
+.card{
+background:#111;
+padding:25px;
+border-radius:14px;
+border:1px solid rgba(212,175,55,.25);
+text-align:center;
+font-weight:600;
+line-height:1.6;
+}
+
+.invest{
+background:#111;
+padding:45px 25px;
+border-radius:16px;
+text-align:center;
+border:1px solid rgba(212,175,55,.25);
+}
+
+.invest p{
+line-height:1.8;
+max-width:900px;
+margin:20px auto;
+}
+
+.btn-center{
+text-align:center;
+padding:45px 20px;
+max-width:900px;
+margin:auto;
+}
+
+.btn-center p{
+color:#aaa;
+max-width:650px;
+margin:auto;
+line-height:1.7;
+}
+
+footer{
+text-align:center;
+padding:45px 20px;
+border-top:1px solid #c9a24a;
+color:#aaa;
+line-height:1.7;
+}
+
+#modal{
+display:none;
+position:fixed;
+z-index:9999;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.95);
+justify-content:center;
+align-items:center;
+cursor:pointer;
+}
+
+#modalImg{
+max-width:95%;
+max-height:95%;
+border-radius:14px;
+}
+
+@media(max-width:768px){
+h1{
+font-size:34px;
+}
+
+.fachada-grid img,
+.gallery img{
+height:300px;
+}
+
+.music-btn{
+position:static;
+margin-top:20px;
+}
+}
 </style>
 </head>
-
-
 
 <body>
 
 <header>
-    
-<img src="logo.png" class="logo">
-<h1>SE RENTA</h1>
-<p class="sub">AV. ALLENDE CASI ESQUINA CON EJIDO</p>
+
+<img src="logo.png" class="logo" alt="Logo">
 
 <button class="music-btn" onclick="activarMusica()">
 🎧 Música
 </button>
 
+<h1>Se Renta</h1>
+
+<p class="sub">Av. Allende casi esquina con Ejido</p>
+
 <p class="hero-text">
-Local Amplio, Mucha espacio, Mas de 200 Mts2
+Local amplio con más de 200 m², ideal para negocios que requieren exposición, espacio de trabajo, bodega o área operativa.
 </p>
 
-<div class="price">$20,000 MXN x MES + IVA.</div>
+<div class="price">$20,000 MXN / mes + IVA</div>
 
-</header>
-
-<div class="section">
-<h2>Fachada</h2><div class="divider"></div>
-<div class="gallery">
-<img src="fachada1.jpg">
-<img src="fachada2.jpg">
-</div>
-</div>
-
-<div class="section">
-<h2>Galería</h2><div class="divider"></div>
-<div class="gallery">
-<img src="foto1.jpg"><img src="foto2.jpg"><img src="foto3.jpg"><img src="foto4.jpg"><img src="foto5.jpg"><img src="foto6.jpg">
-</div>
-</div>
-
-<div class="section invest">
-<h2>ZONA COMERCIAL</h2>
-<p>
-✔ TALLERES VARIOS EN LA ZONA<br>
-✔ OXXO A DOS CUADRAS<br>
-✔ MUCHO TRANSITO VAHICULAR<br>
-
-<div class="section invest">
-<h2>IDEAL PARA :</h2>
-<p>
-✔ REFACCIONARIAS<br>
-✔ FERRETERIAS<br>
-✔ AUTO PARTES<br>
-✔ ACCESORIOS<br>
-✔ COCINA ECONOMICA<br>
-✔ RESTAURANCITOS<br>
-✔ ETC.<br>
-
-</p>
-</div>
-
-<div class="section">
-<h2>Características</h2><div class="divider"></div>
-<div class="features">
-<div class="card">OFICINA</div>
-<div class="card">2 BAÑOS COMPLETOS</div>
-<div class="card">LAVADERO</div>
-<div class="card">ESPACIO AMPLIO PARA BODEGA O TALLER</div>
-<div class="card">CORTINA DE FIERRO</div>
-<div class="card">PUERTAS AMPLIAS</div>
-<div class="card">LUCES LED</div>
-<div class="card">INSTALACION ELECTRICA 110, LISTA PARA 220, YA ESTA EL CABLEADO</div>
-<div class="card">ALJIBE TINACO Y BOMBA AUTOMATICA</div>
-<div class="card">MUCHA ILUMINACION NATURAL</div>
-<div class="card">REQUISITOS DIFERENTES PARA PERSONAS FISICAS</div>
-</div>
-
-<div class="section">
-<h2>REQUISITOS : para Franquicias o Negocios</h2><div class="divider"></div>
-<div class="features">
-<div class="card">Identificacion Personal Vigente ( ine o Pasaporte ) del Representante Legal</div>
-<div class="card">Comprobante de Domicilio Fiscal</div>
-<div class="card">RFC / Constancia de Situación Fiscal, de la Empresa</div>
-<div class="card">Referencias Proovedores Comerciales o de Arrendadores Anteriores</div>
-<div class="card">Estados Financieros Recientes</div>
-<div class="card">HIstorial de Arrendamiento</div>
-<div class="card">Opinion de Cumplimiento de Sat</div>
-<div class="card">Poder de Representante Legal, que Acedite Facultades para Actos de Administracion o Dominio</div>
-<div class="card">Datos Completos de Facturacion</div>
-<div class="card">Objeto Social y giro Comercial</div>
-</div>
-
-</div>
-
-<div style="text-align:center; margin-top:40px;">
-
-<p style="color:#aaa; max-width:600px; margin:auto;">
-Déjanos tus datos y recibe información clara, opciones disponibles y oportunidades alineadas a tu perfil.
-</p>
-
-<div style="margin-top:20px;">
 <a class="btn" href="https://wa.me/523113392436?text=Hola,%20me%20interesa%20agendar%20una%20cita%20para%20ver%20el%20local%20en%20renta%20ubicado%20en%20Av.%20Allende.%20¿Me%20puedes%20compartir%20disponibilidad?" target="_blank">
 📲 Agendar cita por WhatsApp
 </a>
-</div>
+
+</header>
+
+<section class="section">
+
+<h2>Fachada</h2>
+<div class="divider"></div>
+
+<div class="fachada-grid">
+
+<img src="fachada1.jpg" onclick="abrirModal(this.src)" alt="Fachada Local Allende 1">
+
+<img src="fachada2.jpg" onclick="abrirModal(this.src)" alt="Fachada Local Allende 2">
 
 </div>
 
+</section>
+
+<section class="section">
+
+<h2>Galería</h2>
+<div class="divider"></div>
+
+<div class="gallery">
+
+<img src="foto1.jpg" onclick="abrirModal(this.src)" alt="Galería Local 1">
+<img src="foto2.jpg" onclick="abrirModal(this.src)" alt="Galería Local 2">
+<img src="foto3.jpg" onclick="abrirModal(this.src)" alt="Galería Local 3">
+<img src="foto4.jpg" onclick="abrirModal(this.src)" alt="Galería Local 4">
+<img src="foto5.jpg" onclick="abrirModal(this.src)" alt="Galería Local 5">
+<img src="foto6.jpg" onclick="abrirModal(this.src)" alt="Galería Local 6">
+
 </div>
 
-<div class="section invest">
+</section>
+
+<section class="section invest">
+
+<h2>Zona Comercial</h2>
+
+<p>
+✔ Talleres varios en la zona<br>
+✔ Oxxo a dos cuadras<br>
+✔ Mucho tránsito vehicular<br>
+✔ Entorno con actividad comercial
+</p>
+
+</section>
+
+<section class="section invest">
+
+<h2>Ideal Para</h2>
+
+<p>
+✔ Refaccionarias<br>
+✔ Ferreterías<br>
+✔ Auto partes<br>
+✔ Accesorios<br>
+✔ Cocina económica<br>
+✔ Restaurantes pequeños<br>
+✔ Bodega, taller o negocio operativo
+</p>
+
+</section>
+
+<section class="section">
+
+<h2>Características</h2>
+<div class="divider"></div>
+
+<div class="features">
+
+<div class="card">Oficina</div>
+<div class="card">2 baños completos</div>
+<div class="card">Lavadero</div>
+<div class="card">Espacio amplio para bodega o taller</div>
+<div class="card">Cortina de fierro</div>
+<div class="card">Puertas amplias</div>
+<div class="card">Luces LED</div>
+<div class="card">Instalación eléctrica 110, lista para 220</div>
+<div class="card">Aljibe, tinaco y bomba automática</div>
+<div class="card">Mucha iluminación natural</div>
+<div class="card">Requisitos diferentes para personas físicas</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Requisitos para Franquicias o Negocios</h2>
+<div class="divider"></div>
+
+<div class="features">
+
+<div class="card">Identificación personal vigente del representante legal</div>
+<div class="card">Comprobante de domicilio fiscal</div>
+<div class="card">RFC / Constancia de situación fiscal de la empresa</div>
+<div class="card">Referencias de proveedores comerciales o arrendadores anteriores</div>
+<div class="card">Estados financieros recientes</div>
+<div class="card">Historial de arrendamiento</div>
+<div class="card">Opinión de cumplimiento de SAT</div>
+<div class="card">Poder del representante legal</div>
+<div class="card">Datos completos de facturación</div>
+<div class="card">Objeto social y giro comercial</div>
+
+</div>
+
+</section>
+
+<section class="btn-center">
+
+<p>
+Déjanos tus datos y recibe información clara, disponibilidad y requisitos de acuerdo a tu perfil.
+</p>
+
+<a class="btn" href="https://wa.me/523113392436?text=Hola,%20me%20interesa%20agendar%20una%20cita%20para%20ver%20el%20local%20en%20renta%20ubicado%20en%20Av.%20Allende.%20¿Me%20puedes%20compartir%20disponibilidad?" target="_blank">
+📲 Agendar cita por WhatsApp
+</a>
+
+<br>
+
+<a class="btn" href="https://ventasrodrigomaldonado-ux.github.io/RODRIGO-MALDONADO-PERFIL/" target="_blank">
+Conoce más Propiedades
+</a>
+
+</section>
+
+<section class="section invest">
+
 <h2>Oportunidad Limitada</h2>
+
 <p>
 Locales con estas características en esta zona no permanecen disponibles mucho tiempo.
-
+<br>
 Agenda tu visita antes de que se reserve.
 </p>
 
+</section>
+
 <footer>
 Torrez & Maldonado <br>
-RODRIGO MALDONADO <br> 
-ASESOR INMOBILIARIO | +52 311 339 2436 <br>
+Rodrigo Maldonado | Asesor Inmobiliario<br>
++52 311 339 2436 | +52 322 134 0289<br>
 ventas.rodrigomaldonado@gmail.com
 </footer>
+
+<div id="modal">
+<img id="modalImg" src="">
+</div>
 
 <audio id="musica" loop>
 <source src="musica.mp3" type="audio/mpeg">
@@ -225,9 +437,17 @@ function activarMusica(){
 let audio = document.getElementById("musica");
 audio.play();
 }
+
+function abrirModal(src){
+document.getElementById("modal").style.display="flex";
+document.getElementById("modalImg").src=src;
+}
+
+document.getElementById("modal").addEventListener("click",function(){
+this.style.display="none";
+document.getElementById("modalImg").src="";
+});
 </script>
 
 </body>
 </html>
-
-
